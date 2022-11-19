@@ -43,9 +43,9 @@ class TasksController extends Controller
 
         $tasks->save();
         if($tasks->save()){
-            return ['data has been add'];
+            return ['data has been added SuccessFully'];
         } {
-            return ['erurr'];
+            return ['error'];
         }
     }
 
@@ -86,9 +86,9 @@ class TasksController extends Controller
         $tasks->Task=$request->Task;
         $tasks->save();
         if($tasks->save()){
-            return ['data has been update'];
+            return ['data has been updated SuccessFully'];
         } {
-            return ['erurr'];
+            return ['error'];
         }
     }
 
@@ -102,9 +102,9 @@ class TasksController extends Controller
     {
         $tasks= Tasks::find($id)->delete();
         if($tasks){
-            return ['data has been deleted'];
+            return ['data has been deleted SuccessFully'];
         } {
-            return ['erurr'];
+            return ['error'];
         }
     }
 }
