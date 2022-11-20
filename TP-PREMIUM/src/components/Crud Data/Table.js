@@ -65,8 +65,7 @@ class Table extends React.Component {
     return (
       <div className="gestions">
         <div className="group form-group">
-          Task
-          <input className="form-control"
+          Task <input className="form-control"
             type="text"
             value={this.state.Task}
             onChange={this.handleChange}
