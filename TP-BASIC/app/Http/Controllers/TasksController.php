@@ -16,7 +16,7 @@ class TasksController extends Controller
      */
     public function index()
     {
-        $tasks =Tasks::get();
+        $tasks =Tasks::all();
         return  $tasks;
     }
 
