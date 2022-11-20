@@ -13,7 +13,7 @@ class Chart extends React.Component{
             label:"Task Period (/H)", 
             data: this.props.DataTasks.map((value)=>value.Period),
             backgroundColor:["purple"],  
-              indexAxis: 'x',   
+            indexAxis: 'x',   
           }],
         }
 
